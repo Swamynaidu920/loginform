@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('C:/Users/swamy/Desktop/flo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            background-size: 100%;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 250px;
+            border-radius: 20px;
+            background: linear-gradient(to right, #b1ad36, #e55b05, #e45454);
+            text-align: center;
+            font-style: normal;
+            color: antiquewhite;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-right: 50px;
+        }
+        fieldset {
+            background-color: rgb(255, 255, 255);
+            width: 260px;
+            border-radius: 9px;
+            padding: 20px;
+            border: none;
+        }
+        #form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 50px;
+           
+        }
+        input[type=text],input[type=password]{
+            border: none;
+            border-bottom:2px solid #b2a669;
+            outline: none;
+            background: none;
+            padding:10px;
+            width: 90%;
+            font-size: 16px;
+        }
+        h1{
+            text-align: center;
+            color: burlywood;
+            font-size: 50px;
+
+        }
+        label{
+            font-weight: 400;
+            color: burlywood;
+        }
+        #bg{
+            background-color: rgb(7, 107, 75);
+        }
+        #forget{
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            color: cadetblue;
+            text-decoration: none;
+        }
+        input::placeholder{
+            color: aliceblue;
+            font-style: normal;
+            font-size: smaller;
+        }
+        p{
+            color: burlywood;
+            font-size: 17px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>                                               
+    <div id="form">                                       
+        <fieldset id="bg">
+            <form>
+                <h1>LOGIN</h1>
+                <label for="username">USERNAME</label>
+                <input type="text" name="username" id="username" placeholder="👤Type your name">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" placeholder="🔒Type your password"><br>
+                <a id="forget" href="forget.html">forget your password?</a><br><br>
+                <button>Login</button>
+                <p>or Sign up with</p><br><br>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
